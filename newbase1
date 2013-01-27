@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Morortwitter</title> 
+    <link media='screen' href='/bootstrap/css/bootstrap.min.css' rel='stylesheet' /> 
+    <link media='screen' href='/stylesheets/main.css' rel='stylesheet' /> 
+  <style type="text/css">
+  </style>
+  
+  
+  <link href="../public/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class='container page'>
+	<div class="navbar">       
+	<div class="navbar-inner"> 
+		
+		          <a class="brand" href="/">          <img src="http://i.imgur.com/rlgYB5A.png" height="20" width="160" />  </a>
+		<ul class="nav"> 
+			
+			            
+			<li> 
+				
+				              <a href="">About</a>            </li> 
+			
+			            
+			<li>              <a href="demofilter-master/teamplates/contact.html">Contact</a>            </li> 
+			
+			  
+			<li>              <a href="">ImageGallery</a>            </li> 
+			<li>              <a href="howto.html">?????????????????</a>            </li> 
+			
+			
+			            {% if not user %} 
+			
+			              
+			<li>                <a href="{{ login_url }}">Login</a>              </li>            {% else %}
+              
+			<li> 
+				
+				                <a href="/">                  {{ user.nickname }}                </a>              </li>              
+			<li> 
+				
+				                <a href="{{ logout_url }}">Logout<br />
+					</a>              </li>            {% endif %}
+          
+		</ul>  
+        </div>      </div>
+<div class="row-fluid"> 
+	
+	  	        
+	<div class="row">         
+		<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;">
+			<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;">
+				<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;">
+					<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;">
+										<p>  </p>
+										<p><img src="http://i.imgur.com/3oxZvR0.png" alt="shop" border="0" style="margin: 0px; width: 700px; height: 500px;" /></p>
+										<p>&nbsp;</p></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote>
+		<p><br />
+			</p></div></div>
+		<div class="span12">          
+		{% block content %}
+        {% endblock %}
+        </div> 
+		</div>
+		   
+	  
+	
+    <div class='container page'>  
+<div id="footer">      
+	<p class="muted credit">PSU market's fanpage <a href="http://www.facebook.com/pages/PSUmarket/233296100124121">PSU Market</a> </p></div>   </div> 
+  
+<script src="/javascripts/jquery-1.8.3.min.js">
+//<![CDATA[
+
+//]]>
+</script>    
+<script src="/bootstrap/js/bootstrap.min.js">
+//<![CDATA[
+
+//]]>
+</script>
